@@ -9,6 +9,9 @@ $(document).ready(function() {
     var hero = $("input:radio[name=hero]:checked").val();
     var fingers = $("input:radio[name=fingers]:checked").val();
 
+    event.preventDefault()
+
+
 
 
 
