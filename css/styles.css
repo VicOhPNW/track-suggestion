@@ -1,9 +1,6 @@
-
-
 .button {
   margin-bottom: 40px;
   margin-top: 10px;
-  ;
 }
 
 .container {
@@ -19,20 +16,8 @@
   font-size: 20px;
 }
 
-.results h3 {
-  display: none;
-}
-
-.results li {
-  display: none;
-}
-
-.results p {
-  display: none;
-}
-
-.results ul {
-  list-style-type: none;
+.results {
+ display: none
 }
 
 h1 {
@@ -50,4 +35,8 @@ h4 {
 form {
   margin-left: 75px;
   margin-right: 75px;
+}
+
+ul {
+  list-style-type: none;
 }
