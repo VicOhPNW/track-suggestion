@@ -1,7 +1,25 @@
 
+
 .container {
   background-color: lightblue;
 }
+
+.liLook {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*.results li {
+  display: none;
+}*/
+
+/*.results p {
+  display: none;
+}
+
+.results ul {
+  list-style-type: none;
+}*/
 
 h1 {
   padding-bottom: 10px;
