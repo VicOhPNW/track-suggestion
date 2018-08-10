@@ -1,18 +1,27 @@
 
 
 .button {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  ;
 }
 
 .container {
   background-color: lightblue;
 }
 
+.intro {
+  padding-bottom: 10px;
+}
+
 .liLook {
   font-weight: bold;
   font-size: 20px;
 }
+
+/*.results h3 {
+  display: none;
+}*/
 
 /*.results li {
   display: none;
@@ -36,4 +45,9 @@ h3 {
 
 h4 {
   padding-bottom: 10px;
+}
+
+form {
+  margin-left: 75px;
+  margin-right: 75px;
 }

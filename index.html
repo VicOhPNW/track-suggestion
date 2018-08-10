@@ -10,89 +10,132 @@
 
   <body>
     <div class="container">
-    <div>
-      <h1>What Track Should I take?</h1>
-      <h3>You can't predict the future, which can make coming to a decision about your own future pretty unnerving. <b>We're here to help!</b></h3>
+      <div class="intro">
+        <h1>What Track Should I take?</h1>
+        <h3>You can't predict the future, which can make coming to a decision about your own future pretty unnerving. <b>We're here to help!</b></h3>
 
-      <h4>Our best advice is not to worry too much about it - most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school.</h4>
+        <h4>Our best advice is not to worry too much about it - most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school.</h4>
+      </div>
 
-      <h4>That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another. Answer the next few simple questions/prompts and we'll make a suggestion based on your answers.</h4>
-    </div>
-
-<!-- FORM STARTS HERE -->
       <div>
-        <form id="languageTrack">
-          <div class="container">
-            <div>
-              <label for="gameInput">1. When you pick a game, do you choose it based on:</label>
-              <select class="form-control" id="gameInput">
-                <option value"1">Flavor - theme, design, layout. If it looks fun, it's probably fun.</option>
-                <option value"2">Game Design/Theory - what type of game is it (e.g. puzzle, resource management, co-op...)? I like understanding the rules to maximize my win strategy.</option>
-              </select>
-            </div>
-  <br>
-            <label for="corporation">2. What style company would you like to work for?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="corporation" value="3">
-                Large, established company.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="corporation" value="4">
-                Small, established company.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="corporation" value="5">
-                Fast-paced start-up.
-              </label>
-            </div>
-  <br>
-            <label for="build">3. Would you like to build:</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="6">
-                Applications
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="7">
-                Websites
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="8">
-                Operating Systems and/or software
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="9">
-                All of the above.
-              </label>
-            </div>
-  <br>
-
-
-
-
-
-
-
-            <br>
-          <button type="submit" class="button">Reveal my path!</button>
+      <h4>That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another. Answer the next few simple questions/prompts and we'll make a suggestion based on your answers.</h4>
+<!-- FORM STARTS HERE -->
+      <form id="languageTrack">
+          <div>
+            <label for="gameInput">1. When you pick a game, do you choose it based on:</label>
+            <select class="form-control" id="gameInput">
+              <option value"1">Flavor - theme, design, layout. If it looks fun, it's probably fun.</option>
+              <option value"2">Game Design/Theory - what type of game is it (e.g. puzzle, resource management, co-op...)? I like understanding the rules to maximize my win strategy.</option>
+            </select>
           </div>
-        </form>
+<br>
+          <label for="corporation">2. What style company would you like to work for?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="corporation" value="3">
+              Large, established company.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="corporation" value="4">
+              Small, established company.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="corporation" value="5">
+              Fast-paced start-up.
+            </label>
+          </div>
+<br>
+          <label for="build">3. Would you like to build:</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="6">
+              Applications
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="7">
+              Websites
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="8">
+              Operating Systems and/or software
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="9">
+              All of the above.
+            </label>
+          </div>
+      <br>
+          <label for="hero">4. Who is your tech "hero"?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hero" value="10">
+              <img src="img/BillGates.jpeg" alt="Bill Gates">
+              Bill Gates
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hero" value="11">
+              Ada Lovelace
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hero" value="12">
+              Steve Jobs
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hero" value="13">
+              Radia Perlman
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="hero" value="14">
+              Mark Zuckerberg
+            </label>
+          </div>
+      <br>
+        <label for="fingers">5. How many fingers am I holding up?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fingers" value="15">
+            0
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fingers" value="16">
+            3
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="fingers" value="17">
+            20
+          </label>
+        </div>
+
+        <button type="submit" class="button">Reveal my path!</button>
+      </form>
       </div>
 <!-- FORM ENDS HERE -->
 
 <!--RESULT STARTS HERE-->
       <div class="results">
+        <h3>I should learn:</h3>
         <ul>
           <li id="c#"><span class="liLook">C#</span></li>
             <p>C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
