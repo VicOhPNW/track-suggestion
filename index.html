@@ -10,21 +10,83 @@
 
   <body>
     <div class="container">
+    <div>
       <h1>What Track Should I take?</h1>
       <h3>You can't predict the future, which can make coming to a decision about your own future pretty unnerving. <b>We're here to help!</b></h3>
 
       <h4>Our best advice is not to worry too much about it - most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school.</h4>
 
       <h4>That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another. Answer the next few simple questions/prompts and we'll make a suggestion based on your answers.</h4>
+    </div>
 
 <!-- FORM STARTS HERE -->
       <div>
-        <form id="">
-          <label for""=>1. </label>
-          <select >
-          </select>
+        <form id="languageTrack">
+          <div class="container">
+            <div>
+              <label for="gameInput">1. When you pick a game, do you choose it based on:</label>
+              <select class="form-control" id="gameInput">
+                <option value"1">Flavor - theme, design, layout. If it looks fun, it's probably fun.</option>
+                <option value"2">Game Design/Theory - what type of game is it (e.g. puzzle, resource management, co-op...)? I like understanding the rules to maximize my win strategy.</option>
+              </select>
+            </div>
+  <br>
+            <label for="corporation">2. What style company would you like to work for?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="corporation" value="3">
+                Large, established company.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="corporation" value="4">
+                Small, established company.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="corporation" value="5">
+                Fast-paced start-up.
+              </label>
+            </div>
+  <br>
+            <label for="build">3. Would you like to build:</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="6">
+                Applications
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="7">
+                Websites
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="8">
+                Operating Systems and/or software
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="9">
+                All of the above.
+              </label>
+            </div>
+  <br>
 
+
+
+
+
+
+
+            <br>
           <button type="submit" class="button">Reveal my path!</button>
+          </div>
         </form>
       </div>
 <!-- FORM ENDS HERE -->
