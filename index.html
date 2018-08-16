@@ -10,135 +10,137 @@
 
   <body>
     <div class="container">
-      <div class="intro">
-        <h1>What Track Should I take?</h1>
-        <h3>You can't predict the future, which can make coming to a decision about your own future pretty unnerving. <b>We're here to help!</b></h3>
+      <div class="notResults">
+        <div class="intro">
+          <h1>What Track Should I take?</h1>
+          <h3>You can't predict the future, which can make coming to a decision about your own future pretty unnerving. <b>We're here to help!</b></h3>
 
-        <h4>Our best advice is not to worry too much about it - most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school.</h4>
+          <h4>Our best advice is not to worry too much about it - most modern programming languages have more similarities than differences, and Epicodus graduates often find themselves working in different languages than they studied in school.</h4>
+        </div>
+
+        <div>
+        <h4>That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another. Answer the next few simple questions/prompts and we'll make a suggestion based on your answers.</h4>
+
+        <form id="languageTrack">
+            <div class="question">
+              <label for="gameInput">1. When you pick a game, do you choose it based on:</label>
+              <select class="form-control" id="inputGame">
+                <option value="1">Flavor - theme, design, layout. If it looks fun, it's probably fun.</option>
+                <option value="2">Game Design/Theory - what type of game is it (e.g. puzzle, resource management, co-op...)? I like understanding the rules to maximize my win strategy.</option>
+              </select>
+            </div>
+
+            <div class="question">
+              <label for="corporation">2. What style company would you like to work for?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="corporation" value="1">
+                  Large, established company.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="corporation" value="2">
+                  Small, established company.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="corporation" value="3">
+                  Fast-paced start-up.
+                </label>
+              </div>
+            </div>
+
+            <div class="question">
+              <label for="build">3. Would you like to build:</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="build" value="1">
+                  Applications
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="build" value="2">
+                  Websites
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="build" value="3">
+                  Operating Systems and/or software
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="build" value="4">
+                  All of the above.
+                </label>
+              </div>
+            </div>
+
+            <div class="question">
+              <label for="hero">4. Who is your tech "hero"?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="hero" value="1">
+                  <img src="img/BillGates.jpeg" alt="Bill Gates">
+                  Bill Gates
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="hero" value="2">
+                  Ada Lovelace
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="hero" value="3">
+                  Steve Jobs
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="hero" value="4">
+                  Radia Perlman
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="hero" value="5">
+                  Mark Zuckerberg
+                </label>
+              </div>
+            </div>
+
+            <div class="question">
+              <label for="fingers">5. How many fingers am I holding up?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="fingers" value="1">
+                  0
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="fingers" value="2">
+                  3
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="fingers" value="3">
+                  20
+                </label>
+              </div>
+            </div>
+
+          <button type="submit" class="button">Reveal my path!</button>
+        </form>
       </div>
-
-      <div>
-      <h4>That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another. Answer the next few simple questions/prompts and we'll make a suggestion based on your answers.</h4>
-
-      <form id="languageTrack">
-          <div class="question">
-            <label for="gameInput">1. When you pick a game, do you choose it based on:</label>
-            <select class="form-control" id="inputGame">
-              <option value="1">Flavor - theme, design, layout. If it looks fun, it's probably fun.</option>
-              <option value="2">Game Design/Theory - what type of game is it (e.g. puzzle, resource management, co-op...)? I like understanding the rules to maximize my win strategy.</option>
-            </select>
-          </div>
-
-          <div class="question">
-            <label for="corporation">2. What style company would you like to work for?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="corporation" value="1">
-                Large, established company.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="corporation" value="2">
-                Small, established company.
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="corporation" value="3">
-                Fast-paced start-up.
-              </label>
-            </div>
-          </div>
-
-          <div class="question">
-            <label for="build">3. Would you like to build:</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="1">
-                Applications
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="2">
-                Websites
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="3">
-                Operating Systems and/or software
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="build" value="4">
-                All of the above.
-              </label>
-            </div>
-          </div>
-
-          <div class="question">
-            <label for="hero">4. Who is your tech "hero"?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="hero" value="1">
-                <img src="img/BillGates.jpeg" alt="Bill Gates">
-                Bill Gates
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="hero" value="2">
-                Ada Lovelace
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="hero" value="3">
-                Steve Jobs
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="hero" value="4">
-                Radia Perlman
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="hero" value="5">
-                Mark Zuckerberg
-              </label>
-            </div>
-          </div>
-
-          <div class="question">
-            <label for="fingers">5. How many fingers am I holding up?</label>
-            <div class="radio">
-              <label>
-                <input type="radio" name="fingers" value="1">
-                0
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="fingers" value="2">
-                3
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="fingers" value="3">
-                20
-              </label>
-            </div>
-          </div>
-
-        <button type="submit" class="button">Reveal my path!</button>
-      </form>
-      </div>
+    </div>
 
       <div class="result">
         <ul>
