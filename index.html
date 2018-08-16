@@ -19,9 +19,9 @@
 
       <div>
       <h4>That said, each language has found a bit of a niche, and depending on your interests, you might be attracted to one over another. Answer the next few simple questions/prompts and we'll make a suggestion based on your answers.</h4>
-<!-- FORM STARTS HERE -->
+
       <form id="languageTrack">
-          <div>
+          <div class="question">
             <label for="gameInput">1. When you pick a game, do you choose it based on:</label>
             <select class="form-control" id="inputGame">
               <option value="1">Flavor - theme, design, layout. If it looks fun, it's probably fun.</option>
@@ -29,18 +29,22 @@
             </select>
           </div>
 <br>
-          <label for="corporation">2. What style company would you like to work for?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="corporation" value="1">
-              Large, established company.
-            </label>
+          <div class="question">
+            <label for="corporation">2. What style company would you like to work for?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="corporation" value="1">
+                Large, established company.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="corporation" value="2">
+                Small, established company.
+              </label>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="corporation" value="2">
-              Small, established company.
-            </label>
+
           </div>
           <div class="radio">
             <label>
@@ -49,91 +53,95 @@
             </label>
           </div>
 <br>
-          <label for="build">3. Would you like to build:</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="build" value="1">
-              Applications
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="build" value="2">
-              Websites
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="build" value="3">
-              Operating Systems and/or software
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="build" value="4">
-              All of the above.
-            </label>
-          </div>
-      <br>
-          <label for="hero">4. Who is your tech "hero"?</label>
-          <div class="radio">
-            <label>
-              <input type="radio" name="hero" value="1">
-              <img src="img/BillGates.jpeg" alt="Bill Gates">
-              Bill Gates
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="hero" value="2">
-              Ada Lovelace
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="hero" value="3">
-              Steve Jobs
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="hero" value="4">
-              Radia Perlman
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="hero" value="5">
-              Mark Zuckerberg
-            </label>
+          <div class="question">
+            <label for="build">3. Would you like to build:</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="1">
+                Applications
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="2">
+                Websites
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="3">
+                Operating Systems and/or software
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="build" value="4">
+                All of the above.
+              </label>
+            </div>
           </div>
       <br>
-        <label for="fingers">5. How many fingers am I holding up?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="fingers" value="1">
-            0
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="fingers" value="2">
-            3
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="fingers" value="3">
-            20
-          </label>
-        </div>
+          <div class="question">
+            <label for="hero">4. Who is your tech "hero"?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="hero" value="1">
+                <img src="img/BillGates.jpeg" alt="Bill Gates">
+                Bill Gates
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="hero" value="2">
+                Ada Lovelace
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="hero" value="3">
+                Steve Jobs
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="hero" value="4">
+                Radia Perlman
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="hero" value="5">
+                Mark Zuckerberg
+              </label>
+            </div>
+          </div>
+      <br>
+          <div class="question">
+            <label for="fingers">5. How many fingers am I holding up?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="fingers" value="1">
+                0
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="fingers" value="2">
+                3
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="fingers" value="3">
+                20
+              </label>
+            </div>
+          </div>
 
         <button type="submit" class="button">Reveal my path!</button>
       </form>
       </div>
-<!-- FORM ENDS HERE -->
 
-<!--RESULT STARTS HERE. Per dev tools (sources), this is where breakpoint starts-->
       <div class="result">
         <ul>
           <li id="cSharp"><span class="liLook">I should learn: C#</span>
@@ -148,12 +156,11 @@
           <li id="ruby"><span class="liLook">I should learn: Ruby</span>
             <p>Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
           </li>
-          <li id="design"><span class="liLook">I should learn: CSS</span>
+          <li id="css"><span class="liLook">I should learn: CSS</span>
             <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers. HTML — used for building the structure of the page — and CSS — used for the visual layout — are the two basic languages involved in the building of web pages and web applications.</p>
           </li>
         </ul>
       </div>
-<!--RESULT STARTS HERE-->
 
     </div>
   </body>
