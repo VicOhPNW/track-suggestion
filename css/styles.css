@@ -16,9 +16,9 @@
   font-size: 20px;
 }
 
-/* .result {
- display: none
-} */
+.question {
+  padding-top: 20px;
+}
 
 li {
   display: none;

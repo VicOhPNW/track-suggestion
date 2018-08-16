@@ -7,9 +7,6 @@ $(document).ready(function(){
     var hero = $("input:radio[name=hero]:checked").val();
     var fingers = $("input:radio[name=fingers]:checked").val();
 
-// Hide when remaining result options when result appears
-    // $("li").hide();
-
 
 // Result branching
     if (game === "1" && corporation === "1" && build === "1" && hero === "1" && fingers === "1") {
@@ -24,8 +21,6 @@ $(document).ready(function(){
         $("#ruby").show();
       } else (game === "2" && corporation === "1" && build === "3" && hero === "4" && fingers === "2")
         $("#css").show();
-
-
 
 
     event.preventDefault();
