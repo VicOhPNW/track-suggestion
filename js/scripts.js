@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("button").click(function(event) {
+  $(".button").click(function(event) {
 
     var game = $("#inputGame").val();
     var corporation = $("input:radio[name=corporation]:checked").val();
@@ -10,14 +10,11 @@ $(document).ready(function(){
 //Hide when remaining result options when result appears
     // $("li").hide();
 
-// This alert works unsure what's going on below.-
-    // alert("work");
 
-// Result branching - user interface
-$("button").click(function(event) {
+// Result branching
 
-    if (game === "1" && corporation === "3" && build === "6" && hero === "10" && fingers === "15") {
-      $("#cSharp").show();
+    if (game === "1" && corporation === "1" && build === "1" && hero === "1" && fingers === "1") {
+      $("#cSharp").show(); }
     // } else if (game === "2" && corporation === "4" && build === "7" && hero = "11" && fingers === "16") {
     //   $("#java").show();
     // } else if
@@ -32,7 +29,7 @@ $("button").click(function(event) {
 
 
 
-    // event.preventDefault();
+  event.preventDefault();
 
   });
 });

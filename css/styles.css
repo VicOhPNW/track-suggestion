@@ -16,8 +16,12 @@
   font-size: 20px;
 }
 
-.result {
+/* .result {
  display: none
+} */
+
+li {
+  display: none;
 }
 
 h1 {
